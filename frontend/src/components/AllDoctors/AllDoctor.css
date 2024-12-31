@@ -1,0 +1,99 @@
+/* AllDoctor.css */
+
+.doctor-list-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.img {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Limit the height of the banner */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+  border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+/* Doctor list styles */
+.doctor-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Doctor card styles */
+.doctor-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 10px;
+  padding: 15px;
+  width: calc(20% - 40px); /* Adjust width for larger screens */
+}
+
+.doctor-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* Rounded corners for doctor images */
+}
+
+.doctor-info {
+  margin-top: 10px;
+}
+
+.doctor-info h3 {
+    font-size: 1.25rem; /* Smaller font size for doctor names */
+    margin-bottom: 5px; /* Space below name */
+}
+
+.doctor-info p {
+    font-size: 0.9rem; /* Smaller font size for details */
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.toggle-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .doctor-card {
+        width: calc(25% - 40px); /* Adjust for medium screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .doctor-card {
+        width: calc(33.33% - 40px); /* Adjust for small screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .doctor-card {
+        width: calc(100% - 40px); /* Full width on extra small screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller heading on small screens */
+    }
+}

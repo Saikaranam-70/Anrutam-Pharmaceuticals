@@ -1,0 +1,59 @@
+/* Doctor Detail Page Styles */
+.doctor-detail-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .doctor-detail-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .doctor-detail-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .doctor-detail-info {
+    margin-top: 20px;
+  }
+  
+  .doctor-detail-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .doctor-detail-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .doctor-detail-info p strong {
+    font-weight: bold;
+  }
+  
+  .book-appointment-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .book-appointment-btn:hover {
+    background-color: #45a049;
+  }
+  

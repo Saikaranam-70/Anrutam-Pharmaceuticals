@@ -1,0 +1,44 @@
+.user-appointments {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .appointment-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .appointment-item {
+    padding: 15px;
+    border-bottom: 1px solid #ccc; /* Add a bottom border */
+  }
+  
+  .appointment-item:last-child {
+    border-bottom: none; /* Remove border for last item */
+  }
+  
+  .cancel-button {
+    background-color: #ff4d4d; /* Red color for cancel button */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancel-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+  }
+  
+  .error-message {
+    color: red;
+  }
+  

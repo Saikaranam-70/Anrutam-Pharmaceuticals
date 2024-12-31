@@ -1,0 +1,72 @@
+.user-details {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .user-info {
+    margin-top: 20px;
+  }
+  
+  .user-image {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+  }
+  
+  .wallet-info {
+    margin-top: 30px;
+  }
+  
+  .wallet-info h2 {
+    margin-bottom: 10px;
+  }
+  
+  .transaction-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .transaction-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Add a bottom border */
+  }
+  
+  .transaction-item:last-child {
+    border-bottom: none; /* Remove border for last item */
+  }
+  
+  .transaction-item.credit {
+    color: green; /* Green color for credit transactions */
+  }
+  
+  .transaction-item.debit {
+    color: red; /* Red color for debit transactions */
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+  }
+  
+  /* Add Money Section Styles */
+  .add-money {
+    margin-top: 20px;
+  }
+  
+  .add-money input[type='number'] {
+    width: calc(100% - 120px); /* Adjust width based on button size */
+    padding: 10px;
+  }
+  
+  .add-money button {
+    padding: 10px;
+  }
+  

@@ -1,0 +1,59 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .navbar__logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar__links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar__links li {
+    margin-left: 20px;
+  }
+  
+  .navbar__links a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .navbar__toggle {
+    display: none; /* Hide toggle by default */
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar__links {
+      display: none; /* Hide links by default on mobile */
+      flex-direction: column; /* Stack links vertically */
+      position: absolute; /* Positioning for dropdown */
+      top: 60px; /* Adjust based on navbar height */
+      left: 0;
+      width: 100%;
+      background-color: #f8f9fa; /* Background for dropdown */
+      z-index: 1000; /* Ensure dropdown is above other content */
+    }
+
+    .navbar__links li {
+        margin: 20px;
+      }
+  
+    .navbar__links.show {
+      display: flex; /* Show links when toggled */
+    }
+  
+    .navbar__toggle {
+      display: block; /* Show toggle button on mobile */
+      font-size: 30px;
+    }
+
+  }
+  
